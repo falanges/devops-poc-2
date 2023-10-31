@@ -5,10 +5,10 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: bun-express-server
-    restart: on-failure
     ports:
       - "8080:8080"
     volumes:
+      - ./dist:/usr/src/app/dist
       - ./:/usr/src/app
     environment:
       NODE_ENV: production
