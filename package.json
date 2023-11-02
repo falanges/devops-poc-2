@@ -6,7 +6,7 @@
   "scripts": {
     "build": "bun build --target=bun ./server.ts --outfile=server.js",
     "dev": "bun dev server.ts",
-    "start": "bun start dist/server.js"
+    "start": "bun run server.js"
   },
   "devDependencies": {
     "@types/node": "^20.8.9"

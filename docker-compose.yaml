@@ -8,7 +8,9 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./dist:/usr/src/app/dist
-      - ./:/usr/src/app
+      - ./:/app
     environment:
       NODE_ENV: production
+networks:
+  default:
+    external: false
